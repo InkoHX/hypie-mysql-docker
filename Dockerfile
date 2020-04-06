@@ -2,6 +2,8 @@ FROM node:12-alpine
 
 LABEL maintainer="InkoHX <inkohx@gmail.com>"
 
+COPY . /app/hypie
+
 WORKDIR /app/hypie
 
 RUN yarn && \
