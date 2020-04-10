@@ -6,8 +6,8 @@ COPY . /app/hypie
 
 WORKDIR /app/hypie
 
-RUN yarn && \
+RUN yarn --ignore-optional && \
   yarn run compile && \
-  yarn install --production
+  yarn --production --ignore-optional
 
 ENTRYPOINT [ "node", "-r", "dotenv-safe/config", "./dist/bot.js" ]
