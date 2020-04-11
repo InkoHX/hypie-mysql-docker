@@ -64,10 +64,7 @@ export class Client extends DjsClient {
       this.languages.registerAll(),
       this.inhibitors.registerAll()
     ])
-      .catch(error => {
-        this.logger.error(error)
-        process.exit(1)
-      })
+      .catch(error => this.logger.error(error))
 
     return super.login(token)
   }
