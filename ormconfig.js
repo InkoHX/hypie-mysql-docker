@@ -8,7 +8,7 @@ module.exports = {
   username: process.env.MYSQL_USER,
   password: process.env.MYSQL_PASSWORD,
   database: process.env.MYSQL_DATABASE,
-  host: 'database',
+  host: process.env.MYSQL_HOST,
   entities: [
     path.join(__dirname, 'src', 'entities', '*.ts')
   ],
