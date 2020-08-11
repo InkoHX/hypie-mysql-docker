@@ -17,7 +17,7 @@
     "dotenv-safe": "^8.2.0",
     "glob": "^7.1.6",
     "mysql2": "^2.1.0",
-    "parrot-logger": "^0.0.3",
+    "parrot-logger": "^1.0.0",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.2.25",
     "utility-types": "^3.10.0",
